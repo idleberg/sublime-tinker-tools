@@ -25,6 +25,7 @@
   "homepage": "https://github.com/idleberg/sublime-tinker-tools",
   "dependencies": {
     "commander": "^2.9.0",
+    "sanitize-filename": "^1.6.1",
     "xml-js": "^1.0.2"
   },
   "devDependencies": {

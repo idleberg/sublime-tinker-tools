@@ -6,6 +6,7 @@ const fs = require('fs');
 const path = require('path');
 const program = require('commander');
 const process = require('process');
+const sanitize = require('sanitize-filename');
 const xmlJs = require('xml-js');
 
 program
@@ -78,7 +79,7 @@ program
                     spaces: indent
                 });
 
-                let outputFile = trigger + '.sublime-snippet';
+                let outputFile = sanitize(trigger) + '.sublime-snippet';
                 let outputFullPath = path.join(outputDir, outputFile);
 
                 fs.writeFile(outputFullPath, output, function (err) {
