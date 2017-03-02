@@ -1,6 +1,7 @@
 #!/usr/bin/env node
 
 const meta = require('../package.json');
+
 const program = require('commander');
 const fs = require('fs');
 const glob = require('glob');
