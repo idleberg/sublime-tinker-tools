@@ -19,8 +19,8 @@ CLI-tools to split or join Sublime Text snippets and completions
 Once installed, two commands are available from the command-line: `glue` and `scissors`.
 
 ```bash
-# Converts a folder with snippets
-$ glue snippets >> result.sublime-completions
+# Converts snippets into completions, use quotes with wildcards
+$ glue "*.sublime-snippets" >> result.sublime-completions
 
 # Converts completions into a snippets
 $ scissors result.sublime-completions --output snippets
