@@ -24,7 +24,9 @@
   },
   "homepage": "https://github.com/idleberg/sublime-tinker-tools",
   "dependencies": {
+    "async": "^2.1.5",
     "commander": "^2.9.0",
+    "glob": "^7.1.1",
     "sanitize-filename": "^1.6.1",
     "xml-js": "^1.0.2"
   },
