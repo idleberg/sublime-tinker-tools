@@ -20,6 +20,7 @@ program
         let scopes = [];
         let output = {
             'generator': `${meta.name} - ${meta.homepage}`,
+            'scope': null,
             'completions': []
         };
 
