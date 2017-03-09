@@ -27,7 +27,6 @@ program
         glob(pattern, function (error, files) {
 
             files.forEach(function(filePath) {
-                console.log
                 let data;
                 let obj;
 
