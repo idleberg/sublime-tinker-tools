@@ -20,7 +20,7 @@ Once installed, two commands are available from the command-line: `glue` and `sc
 
 ```bash
 # Converts snippets into completions (use quotes with wildcards!)
-$ glue "*.sublime-snippets" >> result.sublime-completions
+$ glue "*.sublime-snippets" > result.sublime-completions
 
 # Converts completions into snippets
 $ scissors result.sublime-completions --output snippets
