@@ -80,11 +80,9 @@ program
             let indent = parseInt(program.indent) || 4;
 
             console.log(JSON.stringify(output, null, indent));
-        })
-
-        
+        });
     })
- .parse(process.argv);
+.parse(process.argv);
 
 if (program.args.length === 0) program.help();
 
