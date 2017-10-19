@@ -35,7 +35,7 @@ Both, snippets and completions, have their own pros and cons.
 Feature        | Snippets | Completions
 ---------------|----------|------------------
 Format         | `Plist`  | `JSON`
-Description    | Yes      | Yes (kinda hacky)
+Description    | Yes      | Yes (but kinda hacky)
 Many per File  | No       | Yes
 Fuzzy Complete | No       | Yes
 
