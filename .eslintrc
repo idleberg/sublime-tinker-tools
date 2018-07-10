@@ -1,31 +1,18 @@
 {
-    "env": {
-        "browser": true,
-        "commonjs": true,
-        "es6": true,
-        "node": true
-    },
-    "extends": "eslint:recommended",
-    "parserOptions": {
-        "sourceType": "module"
-    },
-    "rules": {
-        "no-console": 0,
-        "indent": [
-            "error",
-            4
-        ],
-        "linebreak-style": [
-            "error",
-            "unix"
-        ],
-        "quotes": [
-            "error",
-            "single"
-        ],
-        "semi": [
-            "error",
-            "always"
-        ]
-    }
+  "extends": "eslint:recommended",
+  "rules": {
+    "no-console": "off",
+    "no-undef": "off"
+  },
+  "globals": {
+    "atom": true
+  },
+  "env": {
+    "node": true,
+    "browser": true
+  },
+  "parserOptions": {
+      "ecmaVersion": 2017,
+      "sourceType": "module"
+  }
 }

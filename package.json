@@ -24,19 +24,20 @@
   },
   "homepage": "https://github.com/idleberg/sublime-tinker-tools",
   "dependencies": {
-    "async": "^2.1.5",
-    "commander": "^2.9.0",
-    "glob": "^7.1.1",
+    "async": "^2.6.1",
+    "commander": "^2.16.0",
+    "glob": "^7.1.2",
+    "gulp-debug": "^4.0.0",
     "sanitize-filename": "^1.6.1",
-    "xml-js": "^1.0.2"
+    "xml-js": "^1.6.7"
   },
   "devDependencies": {
-    "babel-eslint": "^7.0.0",
-    "eslint": "^3.13.1",
-    "gulp": "github:gulpjs/gulp#4.0",
-    "gulp-jshint": "^2.0.1",
+    "babel-eslint": "^8.2.5",
+    "eslint": "^5.1.0",
+    "gulp": "^4.0.0",
+    "gulp-eslint": "^5.0.0",
     "gulp-jsonlint": "^1.2.0",
-    "jshint": "^2.9.3"
+    "husky": "^0.14.3"
   },
   "scripts": {
     "test": "gulp lint"
