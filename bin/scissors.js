@@ -1,12 +1,13 @@
 #!/usr/bin/env node
 
-const meta = require('../package.json');
+const pkg = require('../package.json');
 
 const program = require('commander');
+const updateNotifier = require('update-notifier');
 const { scissors } = require('../lib');
 
 program
-    .version(meta.version)
+    .version(pkg.version)
     .description('Splits Sublime Text completions into snippets')
     .arguments('<file>')
     .usage('<file> [options]')
@@ -22,3 +23,4 @@ const options = {
 };
 
 scissors(program.args[0], options);
+updateNotifier({pkg}).notify();

@@ -1,12 +1,13 @@
 #!/usr/bin/env node
 
-const meta = require('../package.json');
+const pkg = require('../package.json');
 
 const program = require('commander');
+const updateNotifier = require('update-notifier');
 const { glue } = require('../lib');
 
 program
-  .version(meta.version)
+  .version(pkg.version)
   .description('Joins Sublime Text snippets into completions')
   .arguments('<files>')
   .usage('<files> [options]')
@@ -20,3 +21,4 @@ const options = {
 };
 
 glue(program.args, options);
+updateNotifier({pkg}).notify();
