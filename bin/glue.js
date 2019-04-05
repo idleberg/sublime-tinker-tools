@@ -14,7 +14,7 @@ program
     .usage('<files> [options]')
     .option('-i, --indent [level]', 'specify indentation level')
     .option('-s, --scope [scope]', 'override default syntax scope')
-    .action(function(pattern) {
+    .action( pattern => {
 
         let i = 0;
         let scopes = [];
@@ -24,9 +24,9 @@ program
             'completions': []
         };
 
-        glob(pattern, function (error, files) {
+        glob(pattern, (error, files) => {
 
-            files.forEach(function(filePath) {
+            files.forEach( filePath => {
                 let data;
                 let obj;
 
@@ -49,11 +49,8 @@ program
                     throw error;
                 }
 
-                    console.log(data.completions.length)
-                if (data.completions.length === 0) {
-                }
-
                 scopes.push(obj.snippet.scope._text);
+
                 let trigger = obj.snippet.tabTrigger._text;
                 let contents = obj.snippet.content._cdata;
                 let description = null;
@@ -73,7 +70,7 @@ program
                 i++;
             });
 
-            if (unique(scopes).length > 1 && typeof program.scope === 'undefined') {
+            if (scopes.unique.length > 1 && typeof program.scope === 'undefined') {
                 return console.error('Error: Snippets containing multiple scopes can\'t be joined ' + files);
             }
 
@@ -82,7 +79,7 @@ program
             } else {
                 output.scope = scopes[0];
             }
-            
+
             let indent = parseInt(program.indent) || 4;
 
             console.log(JSON.stringify(output, null, indent));
@@ -92,13 +89,8 @@ program
 
 if (program.args.length === 0) program.help();
 
-// Kudos http://codereview.stackexchange.com/a/83718
-function unique(xs) {
-    var seen = {};
-    return xs.filter(function(x) {
-        if (seen[x])
-            return;
-        seen[x] = true;
-        return x;
-    });
+Array.prototype.unique = () => {
+  return this.filter( (value, index, self) => {
+    return self.indexOf(value) === index;
+  });
 }
