@@ -2,7 +2,7 @@
 
 [![npm](https://img.shields.io/npm/l/sublime-tinker-tools.svg?style=flat-square)](https://www.npmjs.org/package/sublime-tinker-tools)
 [![npm](https://img.shields.io/npm/v/sublime-tinker-tools.svg?style=flat-square)](https://www.npmjs.org/package/sublime-tinker-tools)
-[![Travis](https://img.shields.io/travis/idleberg/sublime-tinker-tools.svg?style=flat-square)](https://travis-ci.org/idleberg/sublime-tinker-tools)
+[![CircleCI](https://flat.badgen.net/circleci/github/idleberg/sublime-tinker-tools)](https://circleci.com/gh/idleberg/sublime-tinker-tools)
 [![David](https://img.shields.io/david/idleberg/sublime-tinker-tools.svg?style=flat-square)](https://david-dm.org/idleberg/sublime-tinker-tools)
 [![David](https://img.shields.io/david/dev/idleberg/sublime-tinker-tools.svg?style=flat-square)](https://david-dm.org/idleberg/sublime-tinker-tools?type=dev)
 
