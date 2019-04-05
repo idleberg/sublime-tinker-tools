@@ -17,13 +17,13 @@ program
     .option('-s, --scope [scope]', 'override default syntax scope')
     .option('-o, --output [directory]', 'specify default output directory')
     .option('-i, --indent [level]', 'specify indentation level')
-    .action(function(file) {
+    .action( file => {
 
-        fs.readFile(file, (err, data) => {
+        fs.readFile(file, async (err, data) => {
             if (err) throw err;
 
             let input;
-            let outputDir = mkOutDir(file);
+            let outputDir = await makeOutDir(file);
 
             try {
                 input = JSON.parse(data.toString());
@@ -35,7 +35,7 @@ program
                 console.log(`Overriding syntax scope to "${program.scope}"`);
             }
 
-            Object.keys(input.completions).forEach(function(key) {
+            Object.keys(input.completions).forEach( key => {
                 let indent = parseInt(program.indent) || 4;
                 let scope = program.scope || input.scope;
                 let contents = input.completions[key].contents;
@@ -82,7 +82,7 @@ program
                 let outputFile = sanitize(trigger) + '.sublime-snippet';
                 let outputFullPath = path.join(outputDir, outputFile);
 
-                fs.writeFile(outputFullPath, output, function (err) {
+                fs.writeFile(outputFullPath, output, err => {
                     if (err) {
                         return console.log(err);
                     }
@@ -97,7 +97,7 @@ program
 if (program.args.length === 0) program.help();
 
 // Functions
-function mkOutDir(file) {
+const makeOutDir = async (file) => {
     let outputDir;
     let basename = path.basename(file, path.extname(file));
 

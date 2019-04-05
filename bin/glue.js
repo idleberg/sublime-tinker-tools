@@ -30,12 +30,14 @@ program
                 let data;
                 let obj;
 
+
                 // Read file
                 try {
                     data = fs.readFileSync(filePath);
                 } catch (error) {
                     return console.error(`Error: Can't read file "${filePath}"`);
                 }
+
 
                 // Validate XML
                 try {
@@ -45,6 +47,10 @@ program
                     });
                 } catch (error) {
                     throw error;
+                }
+
+                    console.log(data.completions.length)
+                if (data.completions.length === 0) {
                 }
 
                 scopes.push(obj.snippet.scope._text);
@@ -68,7 +74,7 @@ program
             });
 
             if (unique(scopes).length > 1 && typeof program.scope === 'undefined') {
-                return console.error('Error: Snippets of multiple scopes can\'t be joined');
+                return console.error('Error: Snippets containing multiple scopes can\'t be joined ' + files);
             }
 
             if (typeof program.scope !== 'undefined' && program.scope.length > 0) {
