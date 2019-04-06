@@ -15,6 +15,10 @@ program
   .option('-s, --scope [scope]', 'override default syntax scope')
   .parse(process.argv);
 
+if (program.args.length === 0) {
+  return program.help();
+}
+
 const options = {
   indent: parseInt(program.indent) || 4,
   scope: program.scope ? program.scope : null
