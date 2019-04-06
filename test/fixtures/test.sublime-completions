@@ -1,0 +1,14 @@
+{
+    "generator": "sublime-tinker-tools - https://github.com/idleberg/sublime-tinker-tools",
+    "scope": "source.python",
+    "completions": [
+        {
+            "trigger": "hello",
+            "contents": "\nHello, ${1:this} is a ${2:snippet}.\n"
+        },
+        {
+            "trigger": "hello",
+            "contents": "\nHello, ${1:this} is another ${2:snippet}.\n"
+        }
+    ]
+}

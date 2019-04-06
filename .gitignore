@@ -13,3 +13,5 @@ yarn-error.log
 *.sublime-snippet
 *.tmSnippet
 todo.md
+!test/fixtures/*.sublime-completions
+!test/fixtures/*.sublime-snippet

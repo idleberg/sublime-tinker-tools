@@ -25,6 +25,7 @@
   "homepage": "https://github.com/idleberg/sublime-tinker-tools",
   "dependencies": {
     "array-uniq": "^2.1.0",
+    "ava": "^1.4.1",
     "commander": "^2.20.0",
     "globby": "^9.2.0",
     "gulp-debug": "^4.0.0",
