@@ -20,7 +20,7 @@ Once installed, two commands are available from the command-line: `glue` and `sc
 
 ```bash
 # Converts snippets into completions (use quotes with wildcards!)
-$ glue "*.sublime-snippets" > result.sublime-completions
+$ glue *.sublime-snippets > result.sublime-completions
 
 # Converts completions into snippets
 $ scissors result.sublime-completions --output Snippets
@@ -39,7 +39,7 @@ Description    | Yes      | Yes (but kinda hacky)
 Many per File  | No       | Yes
 Fuzzy Complete | No       | Yes
 
-Snippets are usually less annoying for the user, but can be painful to manage – which exactly is the strong point of completions.  
+In many cases snippets are less annoying for the user, but can be painful to manage – which exactly is the strong point of completions.
 
 ## License
 
