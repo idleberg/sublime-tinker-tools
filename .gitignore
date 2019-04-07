@@ -5,6 +5,7 @@ vendor/
 
 # package manager files
 npm-debug.log*
+pnpm-lock.yaml
 yarn-error.log
 
 # project specific
