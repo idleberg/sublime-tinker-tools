@@ -4,7 +4,6 @@
 [![npm](https://img.shields.io/npm/v/sublime-tinker-tools.svg?style=flat-square)](https://www.npmjs.org/package/sublime-tinker-tools)
 [![CircleCI](https://flat.badgen.net/circleci/github/idleberg/sublime-tinker-tools)](https://circleci.com/gh/idleberg/sublime-tinker-tools)
 [![David](https://img.shields.io/david/idleberg/sublime-tinker-tools.svg?style=flat-square)](https://david-dm.org/idleberg/sublime-tinker-tools)
-[![David](https://img.shields.io/david/dev/idleberg/sublime-tinker-tools.svg?style=flat-square)](https://david-dm.org/idleberg/sublime-tinker-tools?type=dev)
 
 CLI-tools to split or join Sublime Text snippets and completions
 
