@@ -34,9 +34,9 @@ Both, snippets and completions, have their own pros and cons.
 Feature        | Snippets | Completions
 ---------------|----------|------------------
 Format         | `Plist`  | `JSON`
-Description    | Yes      | Yes (but kinda hacky)
-Many per File  | No       | Yes
-Fuzzy Complete | No       | Yes
+Description    | Yes 👍   | Yes (but kinda hacky) 🙄
+Many per File  | No 👎    | Yes 👍
+Fuzzy Complete | No 👍    | Yes 👎
 
 In many cases snippets are less annoying for the user, but can be painful to manage – which exactly is the strong point of completions.
 
