@@ -31,12 +31,12 @@ For a list of available option, please make use of the `--help` flag.
 
 Both, snippets and completions, have their own pros and cons.
 
-Feature         | Snippets | Completions
-----------------|----------|------------------
-Format          | `Plist`  | `JSON`
-Description     | Yes 👍   | Yes (but kinda hacky) 🙄
-Many per File   | No 👎    | Yes 👍
-Strict Triggers | Yes 👍   | No 👎
+Feature         | Snippets     | Completions
+----------------|--------------|------------------
+Format          | `Plist`      | `JSON`
+Description     | :thumbsup:   | :roll_eyes: (kinda hacky)
+Many per File   | :thumbsup:   | :thumbsup:
+Strict Triggers | :thumbsdown: | :thumbsdown:
 
 In many cases snippets are less annoying for the user, but can be painful to manage – which exactly is the strong point of completions.
 
