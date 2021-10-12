@@ -34,7 +34,7 @@ Both, snippets and completions, have their own pros and cons.
 Feature         | Snippets     | Completions
 ----------------|--------------|------------------
 Format          | `Plist`      | `JSON`
-Description     | :thumbsup:   | :roll_eyes: (kinda hacky)
+Description     | :thumbsup:   | :roll_eyes:
 Many per File   | :thumbsup:   | :thumbsup:
 Strict Triggers | :thumbsdown: | :thumbsdown:
 
